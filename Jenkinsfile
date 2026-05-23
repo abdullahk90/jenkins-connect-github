@@ -37,6 +37,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                sh ("./aktest.sh")
             }
         }
         stage('Report') {
